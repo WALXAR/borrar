@@ -1,0 +1,13 @@
+2021-08-06T14:22:02.3336019Z 
+2021-08-06T14:22:02.3342447Z Error: waiting for creation of Private Endpoint "sbox-pr-befast9dev-app-svc-pe-app1-0" (Resource Group "rg-sbox-pr-befast9dev-asp-apppsfx"): Code="AuthorizationFailed" Message="The client '6b9920fd-262d-4c45-a6b9-8b544c499dfd' with object id '6b9920fd-262d-4c45-a6b9-8b544c499dfd' does not have authorization to perform action 'Microsoft.Network/locations/operations/read' over scope '/subscriptions/107fcab7-976e-44bc-999b-d092d7dee8fb' or the scope is invalid. If access was recently granted, please refresh your credentials." Details=[]
+2021-08-06T14:22:02.3346024Z 
+2021-08-06T14:22:02.3347173Z   with module.ptrn_webapp.module.cl_app_service.azurerm_private_endpoint.cl_app_service_private_endpoint[0],
+2021-08-06T14:22:02.3349513Z   on ../tf-azure-component-library/components/cl_app_service/cl_app_service.tf line 81, in resource "azurerm_private_endpoint" "cl_app_service_private_endpoint":
+2021-08-06T14:22:02.3351228Z   81: resource "azurerm_private_endpoint" "cl_app_service_private_endpoint" {
+2021-08-06T14:22:02.3351935Z 
+2021-08-06T14:22:02.3352336Z 
+2021-08-06T14:22:02.3356462Z Error: waiting for creation of Private Endpoint "sbox-pr-befast9dev-sqlserver-pe-0" (Resource Group "rg-sbox-pr-befast9dev-data"): Code="AuthorizationFailed" Message="The client '6b9920fd-262d-4c45-a6b9-8b544c499dfd' with object id '6b9920fd-262d-4c45-a6b9-8b544c499dfd' does not have authorization to perform action 'Microsoft.Network/locations/operations/read' over scope '/subscriptions/107fcab7-976e-44bc-999b-d092d7dee8fb' or the scope is invalid. If access was recently granted, please refresh your credentials." Details=[]
+2021-08-06T14:22:02.3359700Z 
+2021-08-06T14:22:02.3360868Z   with module.ptrn_webapp.module.cl_azure_sql_server.azurerm_private_endpoint.cl_azure_sql_server_private_endpoint[0],
+2021-08-06T14:22:02.3363202Z   on ../tf-azure-component-library/components/cl_azure_sql_server/cl_azure_sql_server.tf line 171, in resource "azurerm_private_endpoint" "cl_azure_sql_server_private_endpoint":
+2021-08-06T14:22:02.3364970Z  171: resource "azurerm_private_endpoint" "cl_azure_sql_server_private_endpoint" {
